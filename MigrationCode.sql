@@ -14,9 +14,9 @@ order by 1;
 
 -- Looks at South Original States where Young Adults Migrate From
 
-select orginal_state
+select original_state
 from migration
-where orginal_state in ('alabama', 'florida', 'texas', 'georgia', 'alabama', 'arkansas', 'louisana', 'kentucky', 'oklahoma', 'south carolina', 'north carolina', 'virginia', 'west virginia' , 'mississippi', 'missouri');
+where original_state in ('alabama', 'florida', 'texas', 'georgia', 'alabama', 'arkansas', 'louisana', 'kentucky', 'oklahoma', 'south carolina', 'north carolina', 'virginia', 'west virginia' , 'mississippi', 'missouri');
 
 
 -- Looks at Total Percent of Young Adults Moving to Destination Cities
@@ -36,7 +36,7 @@ ORDER BY race DESC limit 2;
 
 select (total_number_destination)/100
 from migration
-where race = 'black' and Orginal_State = 'DC';
+where race = 'black' and Original_State = 'DC';
 
 
 -- Looks at Top 3 Destination Cities by Race
